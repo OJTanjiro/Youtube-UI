@@ -1,0 +1,235 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --red:red;
+    --tomato:tomato;
+    --white:#fff;
+    --black:#000;
+    --purple:purple;
+    --yellowgreen:yellowgreen;
+    --grey:grey;
+}
+
+.header{
+    border: 2px solid var(--red);
+    /* height: 80px; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2px 30px;
+}
+
+.main-content{
+    border: 2px solid var(--black);
+    display: flex;
+}
+
+
+
+.menu-container{
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    /* border: 2px solid var(--tomato); */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header img{
+    width: 100%;
+    height: 100%;
+}
+
+.youtube-logo-container{
+    /* border: 2px solid var(--tomato); */
+    display: flex;
+    align-items: center;
+}
+
+.youtube-logo{
+    width: 35px;
+    height: 35px;
+    /* border: 2px solid var(--black); */
+    display: block;
+}
+
+.youtube-name{
+    font-weight: 700;
+    font-size: 22px;
+    position: relative;
+    /* border: 1px solid var(--purple); */
+}
+
+.youtube-country{
+    font-size: 10px;
+    position: absolute;
+    top: -5px;
+    /* position: relative; */
+    right: -10px;
+    color: var(--grey);
+}
+
+.header-brand{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.header-search{
+    /* border: 2px solid var(--black); */
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+.header-mic{
+    height: 30px;
+    width: 30px;
+    background: var(--grey);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.search-container{
+    border: 1px solid var(--red);
+    display: flex;
+    border-radius: 20px;
+    overflow-inline: hidden;
+}
+
+.search-container input{
+    border: none;
+    outline: none;
+    padding: 11px 20px;
+    width: 400px;
+}
+
+
+.search-btn-hol{
+    background: var(--grey);
+    padding: 5px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.search-btn-hol i{
+    color: var(--white);
+}
+
+
+.header-userprofile{
+    /* border: 2px solid var(--black); */
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+    /* temporary */
+    /* width: 200px; */
+    /* padding: 5px; */
+}
+
+.header-userprofile button{
+    border: none;
+    padding: 5px 10px;
+    background: var(--grey);
+    color: var(--white);
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.header-userprofile button i{
+    font-size: 22px;
+}
+
+.userprofile-icon{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: var(--grey);
+}
+
+.userprofile-icon img{
+    width: 100%;
+    height: 100%;
+}
+
+.notifications-holder{
+    position: relative;
+}
+
+.notifications-count{
+    background: var(--red);
+    font-size: 11px;
+    padding: 1px 2px;
+    display: block;
+    border-radius: 5px;
+    position: absolute;
+    top: -5px;
+    right: -10px;
+}
+
+
+
+.main-content-sidediv{
+    border: 2px solid var(--purple);
+    height: 600px;
+    width: 15%;
+    padding: 0 5px;
+    overflow-y: scroll;
+}
+
+.main-content-largediv{
+    border: 2px solid var(--yellowgreen);
+    height: 600px;
+    width: 84%;
+}
+
+.custom-heading-line{
+    border-top: var(--grey);
+}
+
+.main-content-sidediv ul{
+    list-style: none;
+    padding: 10px 8px;
+}
+
+.main-content-sidediv ul a{
+    text-decoration: none;
+    display: block;
+    padding: 5px 8px;
+    border-radius: 12px;
+}
+
+.main-content-sidediv ul a:hover{
+    background: var(--grey);
+}
+
+::-webkit-scrollbar{
+    width: 8px;
+    height: 15px;
+}
+
+::-webkit-scrollbar-track{
+    box-shadow: inset 0 0 5px var(--grey);
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb{
+    background: red;
+    border-radius: 10px;
+    height: 5px;
+    width: 8px;
+}
+
+::-webkit-scrollbar-thumb:hover{
+    background: #b30000;
+}
